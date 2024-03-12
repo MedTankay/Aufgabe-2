@@ -1,0 +1,160 @@
+
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.calendar {
+    width: 350px;
+    /* margin: 50px auto; */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.header {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a.prevBtn, .header a.nextBtn{
+    font-size: 32px; 
+    color: #fff;
+}
+
+.header a.prevBtn:hover, .header a.nextBtn:hover{
+    background-color: #0C7CD5;
+    opacity: 0.4;
+}
+
+.month-year {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 48px;
+}
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 5px 0;
+}
+.weekdays div {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 5px 0;
+    color: #666;
+}
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+.day {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 10px 0;
+    color: #333;
+}
+.today {
+    background-color: #41a0f3;
+    border-radius: 20%;
+    color: #fff;
+}
+.other-month {
+    color: #999;
+}
+.navigation-container {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+    color: #666;
+    opacity: 0.85;
+    border: 1px solid #77779d;
+    background-color: #e9e4e4;
+}
+.navigation-header h2{
+    text-align: center;
+   
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.controls .dropdown{
+    display: flex;
+    justify-content: space-between;
+}
+.month-dropdown, .year-dropdown {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.dropdown label {
+    color: #666;
+    margin-right: 5px;
+}
+.dropdown select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #77779d;
+    background-color: #e9e4e4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    outline: #2196F3;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.todayBtn{
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 8px;
+}
+.btn-container a.nextBtn{
+    margin-left: 8px;
+}
+.btn-container a.prevBtn,.btn-container a.nextBtn{
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+}
+.btn-container a.prevBtn:hover ,.btn-container a.nextBtn:hover{
+    background-color: #0C7CD5;
+}
